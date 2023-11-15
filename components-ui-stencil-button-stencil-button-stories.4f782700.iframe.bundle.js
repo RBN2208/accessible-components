@@ -7,4 +7,4 @@
     label="${args.label}"
     variant='${args.variant}'
     disabled="${args.disabled}"
-  />`).bind({});Default.args={label:"Change for ph-pages test",variant:"default"},Default.parameters={...Default.parameters,docs:{...Default.parameters?.docs,source:{originalSource:'args => html`\n  <stencil-button\n    label="${args.label}"\n    variant=\'${args.variant}\'\n    disabled="${args.disabled}"\n  />`',...Default.parameters?.docs?.source}}};const __namedExportsOrder=["Default"]}}]);
+  />`).bind({});Default.args={label:"Change for ph-pages test v2",variant:"default"},Default.parameters={...Default.parameters,docs:{...Default.parameters?.docs,source:{originalSource:'args => html`\n  <stencil-button\n    label="${args.label}"\n    variant=\'${args.variant}\'\n    disabled="${args.disabled}"\n  />`',...Default.parameters?.docs?.source}}};const __namedExportsOrder=["Default"]}}]);
