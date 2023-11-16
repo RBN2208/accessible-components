@@ -1,0 +1,52 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import { ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Foundation/Colors" />
+
+# Company Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="Primary Color + Shades"
+    colors={{
+      Primary: '#100C42',
+      PrimaryHover: '#282487',
+    }}
+  />
+  <ColorItem
+    title="Secondary"
+    subtitle="Secondary Color + Shades"
+    colors={{
+      Secondary: '#55aac0',
+      SecondaryHover: '#89d6ea',
+    }}
+  />
+  <ColorItem
+    title="Background Colors"
+    subtitle="Neutral Background Colors"
+    colors={{
+      Canvas: '#FFFFFFFF',
+      Surface: '#d7d0cd',
+    }}
+  />
+  <ColorItem
+    title="Text Colors"
+    subtitle="Text Colors"
+    colors={{
+      OnPrimary: '#FFF',
+      OnSecondary: '#FFF',
+      OnCanvas: '#000',
+      ModestOnCanvas: '#A29995',
+    }}
+  />
+  <ColorItem
+    title="Special Colors"
+    subtitle="Special Color Set, e.g. for warnings, errors, sustainability colors"
+    colors={{
+      Red: '#EB716D',
+      Green: '#AEEB99',
+    }}
+  />
+
+</ColorPalette>

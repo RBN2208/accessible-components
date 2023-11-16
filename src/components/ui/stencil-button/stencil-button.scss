@@ -1,0 +1,38 @@
+@import "styles/variables";
+:host {
+  display: block;
+}
+
+.stencil-button {
+  appearance: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  background-color: $stencil-button-bg;
+  color: $stencil-button-color;
+
+  &:active{
+    background-color: $stencil-button-bg-hover;
+  }
+
+  &--secondary {
+    background-color: $stencil-button-bg-secondary;
+    color: $stencil-button-color-secondary;
+  }
+
+  &--success {
+    background-color: $stencil-button-bg-success;
+    color: $stencil-button-color-success;
+  }
+
+  &--error {
+    background-color: $stencil-button-bg-error;
+    color: $stencil-button-color-error;
+  }
+  &.disabled {
+    background-color: $base-grey-light;
+    color: $base-grey;
+  }
+}

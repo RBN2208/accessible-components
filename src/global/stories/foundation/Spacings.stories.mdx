@@ -1,0 +1,90 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Foundation/Spacings" />
+
+export const spacings = {
+  s_100: {
+    xs: "8",
+    s: "12",
+    m: "16",
+    l: "20",
+    xl: "24",
+    xxl: "28"
+  },
+  s_150: {
+    xs: "12",
+    s: "18",
+    m: "24",
+    l: "28",
+    xl: "32",
+    xxl: "36"
+  },
+  s_200: {
+    xs: "16",
+    s: "24",
+    m: "32",
+    l: "36",
+    xl: "40",
+    xxl: "44"
+  }
+};
+
+# Spacings
+
+<div className={'typeset'}>
+  <p>Spacings depending on 16px font size (100%)</p>
+  <Typeset
+    fontSizes={[
+      Number(spacings.s_100.xs),
+      Number(spacings.s_100.s),
+      Number(spacings.s_100.m),
+      Number(spacings.s_100.l),
+      Number(spacings.s_100.xl),
+      Number(spacings.s_100.xxl)
+    ]}
+  />
+
+  <p>Spacings depending on 24px font size (150%)</p>
+  <Typeset
+    fontSizes={[
+      Number(spacings.s_150.xs),
+      Number(spacings.s_150.s),
+      Number(spacings.s_150.m),
+      Number(spacings.s_150.l),
+      Number(spacings.s_150.xl),
+      Number(spacings.s_150.xxl)
+    ]}
+  />
+
+  <p>Spacings depending on 32px font size (200%)</p>
+    <Typeset
+      fontSizes={[
+        Number(spacings.s_200.xs),
+        Number(spacings.s_200.s),
+        Number(spacings.s_200.m),
+        Number(spacings.s_200.l),
+        Number(spacings.s_200.xl),
+        Number(spacings.s_200.xxl)
+      ]}
+    />
+</div>
+
+<style>
+{`
+  .typeset > \* {
+    width: 100%;
+  }
+  .docblock-typeset > div {
+    background: rgb(230,230,230);
+    color: transparent;
+  }
+  .docblock-typeset > div > div {
+    font-size: 50%;
+    line-height: 1!important;
+  }
+  .docblock-typeset > div > div:first-of-type {
+    color: black;
+  }
+`}
+
+</style>

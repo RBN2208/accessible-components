@@ -1,0 +1,85 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Foundation/Typography" />
+
+export const typography = {
+  type: {
+    primary: '"sans-serif", sans-serif',
+    secondary: '"sans-serif", sans-serif',
+  },
+  weight: {
+    regular: 500,
+    medium: 700,
+    bold: 900,
+  },
+  size: {
+    s1: 10,
+    s2: 12,
+    m0: 16, // Base font size
+    m1: 18,
+    m2: 22,
+    l1: 26,
+  },
+};
+
+export const SampleText = 'Example Text';
+
+# Typography
+
+## Font Headlines
+
+**Font:** sans-serif
+
+**Weights:** 900
+
+<div className={'typeset'}>
+  <Typeset
+    fontSizes={[
+      Number(typography.size.s1),
+      Number(typography.size.s2),
+      Number(typography.size.m0),
+      Number(typography.size.m1),
+      Number(typography.size.m2),
+      Number(typography.size.l1),
+    ]}
+    fontWeight={typography.weight.bold}
+    sampleText={SampleText}
+    fontFamily={typography.type.primary}
+  />
+</div>
+
+## Font Copytext
+
+**Font:** sans-serif
+
+**Weights:** 500
+
+<div className={"typeset"}>
+  <Typeset
+    fontSizes={[
+      Number(typography.size.s1),
+      Number(typography.size.s2),
+      Number(typography.size.m0),
+      Number(typography.size.m1),
+      Number(typography.size.m2),
+      Number(typography.size.l1),
+    ]}
+    fontWeight={typography.weight.regular}
+    sampleText={SampleText}
+    fontFamily={typography.type.secondary}
+  />
+</div>
+<style>
+{`
+  .typeset {
+    display: flex;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .typeset > \* {
+  width: 30%;
+  }
+`}
+
+</style>
